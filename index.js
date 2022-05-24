@@ -14,6 +14,8 @@ app.use(bodyparser.json())
 app.use(mid)
 
 app.use('/learner' , require('./learner'))
+app.use('/coach' , require('./routes/coach'))
+
 
 app.listen(8989 , ()=>
 {
