@@ -13,7 +13,7 @@ const app = express();
 app.use(bodyparser.json())
 app.use(mid)
 
-
+app.use('/learner' , require('./learner'))
 
 app.listen(8989 , ()=>
 {
